@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Card of the Day</title>
+</head>
+<body>
+
+ <!-- This is the new nav functionality --->
+   
+  
+ <ul class="nav-links"> 
+	<li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Learn</a></li>
+    
+    
+  
+  </ul>
+
+  <!-- This is the new nav functionality --->
+
+<nav>
+  <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+</nav>
+
+<div id="close">
+	
+<button id="closeButton" onclick="dView()"> X </button>
+
+</div>
+
+<div id="circle">
+<h1 id="circleHeading">Card <br> of <br> The Day </h1>
+
+</div>
+
+
+<!-- ALL THE CARD STUFF GOES HERE ---------> 
+
+<div id=container>
+<section id= "cardImage">
+	
+			<img src="">
+
+</section>
+
+<section id="cardName"> 
+
+			<h1 id="nameGoesHere"></h1>
+
+</section>
+
+<section id="cardDescription">
+	
+			<p id="descripGoesHere"></p>
+
+</section>
+
+<section id="cardKeywords">
+			<h3 id="kwTab"></h3>
+
+			<p id="keywordGoesHere" ></p>
+	
+
+</section>
+
+</div>
+<!-- ALL THE CARD STUFF ENDS HERE ---------> 
+
+	<section id= "drawButton">
+
+		<button id="pullButton" onclick="newCard()">Pull a Card</button>
+		
+
+	</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
