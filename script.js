@@ -604,7 +604,11 @@ let navLinks = document.querySelector(".nav-links") ;
 
 let links = document.querySelector(".nav-links li") ;
 
+// let addButton = document.getElementById("addButton") ;
+
 let addButtonCounter = 1; 
+
+const errorText = document.getElementById("errorText"); 
 
 // VARIABLES----------------------------------------------------
 
@@ -641,8 +645,12 @@ let addButton = document.createElement("button");
 
 	 buttonSection.appendChild(addButton);
 
+	 addButton.addEventListener("click", addAnimationClass);
+
+	 
 	 addButtonCounter ++;
-	 console.log(addButtonCounter);
+
+	 console.log(errorText);
 }
 	
 
@@ -677,14 +685,39 @@ function dView() {
 
 	buttonSection.removeChild(addButton);
 
+	
 
 	addButtonCounter = 1;
+
+
 	
 
 
 
 
 }
+
+// let addButton = document.createElement("button"); 
+const addAnimationClass = () => {
+
+errorText.classList.add("animationClass")
+
+setTimeout(function(){ errorText.classList.remove("animationClass"); }, 1000);
+
+
+}
+
+
+// const addAnother = () => {
+
+// const secondCardImage = document.createElement("section");
+// const secondCardName = document.createElement("section");
+// const secondCardDescription = document.createElement("section");
+// const secondCardKeywords = document.createElement("section");
+
+
+
+// }
 
 
 

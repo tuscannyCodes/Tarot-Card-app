@@ -172,25 +172,25 @@ body {
 }
 
 #addButton {
-  background-color: CadetBlue;
-  color: Gold;
+  background-color: grey;
+  color: rgb(85, 83, 83);
   font-weight: 1000;
   border-style: none;
   border-radius: 15px;
   cursor: pointer;
   height: 60px;
   width: 90px;
-  transition: all 0.35s ease;
+  transition: all 0.15s ease;
   margin: 10px;
 }
 
 #addButton:hover {
-  background-color: DarkSlateGrey;
+  background-color: Grey;
   transform: scale(1.1);
 }
 
 #addButton:active {
-  background-color: gold;
+  background-color: firebrick;
 }
 /*----------------------^BUTTON_ENDS------------------------*/
 
@@ -226,4 +226,40 @@ body {
 
 #kwTab:hover {
   font-size: 30px;
+}
+
+#errorContainer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#errorText {
+  position: absolute;
+  color: rgb(241, 82, 82);
+  font-family: "Press Start 2P", cursive;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.animationClass {
+  opacity: 70;
+  transition: all 1s ease;
+  animation: upps 1s linear;
+}
+
+@keyframes upps {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 5;
+  }
+  25% {
+    opacity: 100;
+  }
+  to {
+    transform: translateY(-450%);
+  }
 }
