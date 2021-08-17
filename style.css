@@ -2,7 +2,7 @@
 nav {
   width: 1500px;
   height: 90px;
-  background-color: rgb(132, 149, 167);
+  background-color: rgb(80, 82, 83);
 }
 /*  THIS IS THE NEW NAV FUNCTIONALITY */
 .hamburger {
@@ -65,18 +65,15 @@ a:hover {
 /*  ^THIS IS THE NEW NAV FUNCTIONALITY */
 /* HEADER CIRCLE ELEMENT */
 #circle {
-  position: relative;
-  top: -90px;
+  position: absolute;
+  top: 30px;
   left: 50px;
-  background-color: rgb(132, 149, 167);
   width: 200px;
   height: 200px;
-  border-radius: 100px;
 }
 
 #circleHeading {
   position: relative;
-  transform: rotate(-30deg);
   left: -5px;
   top: 25px;
   color: gold;
@@ -93,7 +90,7 @@ body {
   margin: 0 auto;
   padding: 0 auto;
   overflow: hidden;
-  background-color: lightslategray;
+  background-color: rgb(80, 82, 83);
 }
 
 /*----------------------CLOSE BUTTON------------------------ */
@@ -102,7 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 260px;
+  top: 50px;
   left: 260px;
 }
 
@@ -139,7 +136,6 @@ body {
   width: 600px;
   border-radius: 50px;
   visibility: hidden;
-  margin-top: -50px;
 }
 /*----------------------BUTTON------------------------ */
 
