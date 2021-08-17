@@ -1,251 +1,208 @@
-
-
-
 /* TOP NAVIGATION BAR */
 nav {
+  width: 1500px;
+  height: 90px;
+  background-color: rgb(132, 149, 167);
+}
+/*  THIS IS THE NEW NAV FUNCTIONALITY */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 50px;
+  margin-left: 1380px;
+  padding-top: 20px;
+}
 
-	width: 1500px;
-	height: 90px;
-	background-color: rgb(132, 149, 167);
-	}
-	/*  THIS IS THE NEW NAV FUNCTIONALITY */
-	.hamburger{
-	  display: flex;
-	  flex-direction: column;
-	  cursor: pointer;
-	  width: 50px;
-	  margin-left: 1380px;
-	  padding-top: 20px;
-	  
-	  
-	}
-	
-	.line{
-	 display:flex;
-	  width: 35px;
-	  height: 6px;
-	  background: white;
-	  margin: 5px;
-	  border-radius: 10px;
-	  z-index: 12;
-	  
-	  
-	}
-	
-	
-	.nav-links {
-	  display: flex;
-	  flex-direction: column;
-	  position: absolute;
-	  list-style: none;
-	  justify-content: center;
-	  align-items: center;
-	  background: rgb(132, 149, 167);
-	  height: 100%;
-	  width: 100%;
-	  z-index: 5;
-	  clip-path: circle(0px at 90% -10%);
-	  -webkit-clip-path: circle(0px at 90% -10%);
-	  transition: all 1s ease-out;
-	  cursor: pointer;
-	}
-	
-	.nav-links.open{
-	  
-	  clip-path: circle(0px at 90% -10%);
-	  -webkit-clip-path: circle(2000px at 90% -10%);
-	}
-	li a{
-	  position: relative;
-	  font-size: 50px;
-	  font-family: 'Ultra', serif;
-	  /*padding: 20px; */
-	  margin: auto;
-	  color: gold;
-	  text-decoration: underline;
-	}
-	
-	a:Hover{
-	  
-	  color: GoldenRod;
-	}
-	
-	
-	/*  ^THIS IS THE NEW NAV FUNCTIONALITY */
-	/* HEADER CIRCLE ELEMENT */
-	#circle {
-		position: relative;
-		top: -90px;
-		left: 50px;
-		background-color: rgb(132, 149, 167);
-		width: 200px;
-		height: 200px;
-		border-radius: 100px;	
-	}
-	
-	#circleHeading {
-	
-		position:relative; 
-		transform: rotate(-30deg);
-		left: -5px;
-		top: 25px;
-		color: gold;
-		font-family: 'Ultra', serif;
-		text-align: center;
-	}
-	
-	
-	::selection {
-	  color:  gold;
-	  background: lightseagreen;
-	}
-	
-	body {
-		margin: 0 auto;
-		padding: 0 auto;
-		overflow: hidden;
-		background-color: lightslategray;
-	}
-	
-	/*----------------------CLOSE BUTTON------------------------ */
-	#close {
-	
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		top: 260px;
-		left: 260px;
-	}
-	
-	#closeButton {
-	
-	background-color: rgb(132, 149, 167);
-	border-style: none;
-	color: gold;
-	width: 30px;
-	height: 30px;
-	border-radius: 10px;
-	font-weight: bold;
-	visibility: hidden;
-	transition: all .35s ease;
-	}
-	
-	#closeButton:Hover{
-	
-		color: crimson; 
-		background-color: lightslategray
-	}
-	
-	#closeButton:active{
-		transition: all .13ms ease;
-		color: crimson; 
-		background-color: crimson
-		
-	}
-	
-	/*----------------------^CLOSE BUTTON------------------------ */
-	
-	/*DIV FOR BACKGROUND */
-	#container {
-		 
-		display: block;
-		margin: 0 auto;
-		background-color: rgb(132, 149, 167);
-		width: 600px;
-		border-radius: 50px;
-		visibility: hidden;
-	}
-	/*----------------------BUTTON------------------------ */
-	
-	
-	#drawButton {
-	
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		margin-top: 100px;
-		
-	
-	}
-	
-	
-	#pullButton {
-	
-		background-color: CadetBlue;
-		color: Gold;
-		font-weight: 1000;
-		border-style: none;
-		border-radius: 15px; 
-		cursor: pointer;
-		height: 60px;
-		width: 90px;
-		transition: all 0.35s ease; 
-	}
-	
-	
-	#pullButton:hover {
-	
-		background-color: DarkSlateGrey; 
-		  transform: scale(1.1);
-	
-	}
-	
-	#pullButton:active {
-	
-		background-color: gold; 
-	
-	}
-	/*----------------------^BUTTON_ENDS------------------------*/
-	
-	#cardName,#cardDescription, #cardKeywords{
-	
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		/*margin-top: 50px;*/
-	}
-	
-	
-	#nameGoesHere {
-	
-		text-decoration: underline;
-		transition: all .35s ease;
-	}
-	
-	#nameGoesHere:hover {
-	
-		font-size: 30px;
-	}
-	
-	#descripGoesHere{
-		width: 450px;
-	}
-	
-	/*------ KEYWORDS----------*/
-	
-	#kwTab {
-	 margin: 0 0 0 0;
-	 transition: all .35s ease;
-	
-	}
-	
-	#kwTab:hover {
-	
-		font-size: 30px;
-	
-	}
-	
-	
-	
-	
-	
+.line {
+  display: flex;
+  width: 35px;
+  height: 6px;
+  background: white;
+  margin: 5px;
+  border-radius: 10px;
+  z-index: 12;
+}
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(132, 149, 167);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  clip-path: circle(0px at 90% -10%);
+  -webkit-clip-path: circle(0px at 90% -10%);
+  transition: all 1s ease-out;
 
+  pointer-events: none;
+}
 
+.nav-links.open {
+  clip-path: circle(0px at 90% -10%);
+  -webkit-clip-path: circle(2000px at 90% -10%);
+  cursor: pointer;
+  pointer-events: auto;
+}
+li a {
+  position: relative;
+  font-size: 50px;
+  font-family: "Ultra", serif;
+  /*padding: 20px; */
+  margin: auto;
+  color: gold;
+  text-decoration: underline;
+}
 
+a:hover {
+  color: GoldenRod;
+}
 
+/*  ^THIS IS THE NEW NAV FUNCTIONALITY */
+/* HEADER CIRCLE ELEMENT */
+#circle {
+  position: relative;
+  top: -90px;
+  left: 50px;
+  background-color: rgb(132, 149, 167);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
 
+#circleHeading {
+  position: relative;
+  transform: rotate(-30deg);
+  left: -5px;
+  top: 25px;
+  color: gold;
+  font-family: "Ultra", serif;
+  text-align: center;
+}
 
+::selection {
+  color: gold;
+  background: lightseagreen;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow: hidden;
+  background-color: lightslategray;
+}
+
+/*----------------------CLOSE BUTTON------------------------ */
+#close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 260px;
+  left: 260px;
+}
+
+#closeButton {
+  background-color: rgb(132, 149, 167);
+  border-style: none;
+  color: gold;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  visibility: hidden;
+  transition: all 0.35s ease;
+}
+
+#closeButton:hover {
+  color: crimson;
+  background-color: lightslategray;
+}
+
+#closeButton:active {
+  transition: all 0.13ms ease;
+  color: crimson;
+  background-color: crimson;
+}
+
+/*----------------------^CLOSE BUTTON------------------------ */
+
+/*DIV FOR BACKGROUND */
+#container {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(132, 149, 167);
+  width: 600px;
+  border-radius: 50px;
+  visibility: hidden;
+  margin-top: -50px;
+}
+/*----------------------BUTTON------------------------ */
+
+#drawButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#pullButton {
+  background-color: CadetBlue;
+  color: Gold;
+  font-weight: 1000;
+  border-style: none;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 60px;
+  width: 90px;
+  transition: all 0.35s ease;
+}
+
+#pullButton:hover {
+  background-color: DarkSlateGrey;
+  transform: scale(1.1);
+}
+
+#pullButton:active {
+  background-color: gold;
+}
+/*----------------------^BUTTON_ENDS------------------------*/
+
+#cardName,
+#cardDescription,
+#cardKeywords {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*margin-top: 50px;*/
+}
+
+#nameGoesHere {
+  text-decoration: underline;
+  transition: all 0.35s ease;
+}
+
+#nameGoesHere:hover {
+  font-size: 30px;
+}
+
+#descripGoesHere {
+  width: 450px;
+}
+
+/*------ KEYWORDS----------*/
+
+#kwTab {
+  margin: 0 0 0 0;
+  transition: all 0.35s ease;
+}
+
+#kwTab:hover {
+  font-size: 30px;
+}
