@@ -604,6 +604,8 @@ let navLinks = document.querySelector(".nav-links") ;
 
 let links = document.querySelector(".nav-links li") ;
 
+let addButtonCounter = 1; 
+
 // VARIABLES----------------------------------------------------
 
 
@@ -629,6 +631,21 @@ container.style.visibility = "visible";
 
 closeButton.style.visibility = "visible"; 
 
+
+if(addButtonCounter < 2 ){
+let addButton = document.createElement("button"); 
+
+	 addButton.innerHTML = "Add another";
+
+	 addButton.setAttribute("id","addButton")
+
+	 buttonSection.appendChild(addButton);
+
+	 addButtonCounter ++;
+	 console.log(addButtonCounter);
+}
+	
+
 console.log (oneCard);
 
 }
@@ -641,7 +658,7 @@ navLinks.addEventListener("click", () => {navLinks.classList.toggle("open");});
 
 //CLOSE FUNCTION --------------------------------------------------
 
-
+const buttonSection = document.getElementById("drawButton")
 
 function dView() {
 
@@ -657,6 +674,14 @@ function dView() {
 	container.style.visibility = "hidden"; 
 
 	closeButton.style.visibility = "hidden"; 
+
+	buttonSection.removeChild(addButton);
+
+
+	addButtonCounter = 1;
+	
+
+
 
 
 }
