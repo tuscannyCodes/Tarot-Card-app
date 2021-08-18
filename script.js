@@ -645,7 +645,7 @@ let addButton = document.createElement("button");
 
 	 buttonSection.appendChild(addButton);
 
-	 addButton.addEventListener("click", addAnimationClass);
+	 addButton.addEventListener("mousedown", addAnimationClass);
 
 	 
 	 addButtonCounter ++;
