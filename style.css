@@ -112,7 +112,7 @@ body {
   border-radius: 10px;
   font-weight: bold;
   visibility: hidden;
-  transition: all 0.35s ease;
+  transition: all 0.1s ease;
 }
 
 #closeButton:hover {
@@ -139,6 +139,7 @@ body {
   border-radius: 50px;
   visibility: hidden;
 }
+
 /*----------------------BUTTON------------------------ */
 
 #drawButton {
