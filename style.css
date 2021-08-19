@@ -99,8 +99,10 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 50px;
+  top: -20px;
   left: 260px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 #closeButton {
@@ -134,7 +136,7 @@ body {
   flex-direction: row;
   display: block;
   margin: 0 auto;
-  margin-top: -90px;
+  margin-top: -60px;
   background-color: rgb(132, 149, 167);
   width: 600px;
   border-radius: 50px;
@@ -206,6 +208,7 @@ body {
 }
 
 img {
+  box-shadow: -8px 5px 20px 1px rgba(0, 0, 0, 0.6);
   width: 300px;
   margin-top: 20px;
 }

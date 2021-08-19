@@ -654,11 +654,11 @@ let addButton = document.createElement("button");
 	 
 	 addButtonCounter ++;
 
-	 console.log(errorText);
+	
 }
 	
 
-console.log (oneCard);
+
 
 }
 //NAVIGATION FUNCTIONS ---------------------------------------------
