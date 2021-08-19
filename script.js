@@ -613,7 +613,7 @@ let addButtonCounter = 1;
 
 const errorText = document.getElementById("errorText"); 
 
-
+const buttonSection = document.getElementById("drawButton")
 
 // VARIABLES----------------------------------------------------
 
@@ -674,7 +674,7 @@ navLinks.addEventListener("click", () => {navLinks.classList.toggle("open");});
 
 //CLOSE FUNCTION --------------------------------------------------
 
-const buttonSection = document.getElementById("drawButton")
+
 
 function closeView() {
 
@@ -693,26 +693,16 @@ function closeView() {
 
 	buttonSection.removeChild(addButton);
 
-
-
 	addButtonCounter = 1;
-
-
-	
-
-
-
 
 }
 
-// let addButton = document.createElement("button"); 
+// INSERT TOKEN ANIMATION FUNCTION
 const addAnimationClass = () => {
 
 errorText.classList.add("animationClass")
 
 setTimeout(function(){ errorText.classList.remove("animationClass"); }, 1000);
-
-
 }
 
 
@@ -726,6 +716,8 @@ setTimeout(function(){ errorText.classList.remove("animationClass"); }, 1000);
 
 
 // }
+
+image.addEventListener("mousedown", newCard)
 
 
 

@@ -143,6 +143,9 @@ body {
   visibility: hidden;
 }
 
+#cardImage {
+  cursor: pointer;
+}
 /*----------------------BUTTON------------------------ */
 
 #drawButton {
