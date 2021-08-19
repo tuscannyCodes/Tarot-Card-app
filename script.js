@@ -591,6 +591,7 @@ const cards = [
 
 
 // ------------------ VARIABLES AND FUNCTIONS -----------------
+const body =document.getElementsByTagName("body")[0];
 
 let image = document.getElementById("cardImage");
 
@@ -611,6 +612,8 @@ let links = document.querySelector(".nav-links li") ;
 let addButtonCounter = 1; 
 
 const errorText = document.getElementById("errorText"); 
+
+
 
 // VARIABLES----------------------------------------------------
 
@@ -638,6 +641,7 @@ image.innerHTML = `<img src = ${oneCard.image} >`
 container.style.visibility = "visible"; 
 
 closeButton.style.visibility = "visible"; 
+
 
 
 if(addButtonCounter < 2 ){
@@ -672,7 +676,7 @@ navLinks.addEventListener("click", () => {navLinks.classList.toggle("open");});
 
 const buttonSection = document.getElementById("drawButton")
 
-function dView() {
+function closeView() {
 
 
 	document.getElementById("nameGoesHere").innerHTML = "" ; 
@@ -689,7 +693,7 @@ function dView() {
 
 	buttonSection.removeChild(addButton);
 
-	
+
 
 	addButtonCounter = 1;
 
