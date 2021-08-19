@@ -216,7 +216,7 @@ img {
 
 @keyframes scale {
   0% {
-    opacity: 25%;
+    opacity: 0%;
     transform: scale(0.9);
   }
 
