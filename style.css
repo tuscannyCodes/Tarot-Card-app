@@ -134,6 +134,7 @@ body {
   flex-direction: row;
   display: block;
   margin: 0 auto;
+  margin-top: -90px;
   background-color: rgb(132, 149, 167);
   width: 600px;
   border-radius: 50px;
@@ -206,6 +207,7 @@ body {
 
 img {
   width: 300px;
+  margin-top: 20px;
 }
 /*----------------------^IMAGE_ENDS------------------------*/
 #cardName,
