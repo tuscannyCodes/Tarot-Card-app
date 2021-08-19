@@ -211,7 +211,19 @@ img {
   box-shadow: -8px 5px 20px 1px rgba(0, 0, 0, 0.6);
   width: 300px;
   margin-top: 20px;
+  animation: scale 1s linear;
 }
+
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*----------------------^IMAGE_ENDS------------------------*/
 #cardName,
 #cardDescription,
