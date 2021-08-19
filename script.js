@@ -679,21 +679,39 @@ navLinks.addEventListener("click", () => {navLinks.classList.toggle("open");});
 function closeView() {
 
 
-	document.getElementById("nameGoesHere").innerHTML = "" ; 
+	// document.getElementById("nameGoesHere").innerHTML = "" ; 
 
-	document.getElementById("descripGoesHere").innerHTML= "" ;
+	// document.getElementById("descripGoesHere").innerHTML= "" ;
 	
-	document.getElementById("kwTab").innerHTML= "" ;
+	// document.getElementById("kwTab").innerHTML= "" ;
 	
-	document.getElementById("keywordGoesHere").innerHTML= ""; 
+	// document.getElementById("keywordGoesHere").innerHTML= ""; 
 	
-	container.style.visibility = "hidden"; 
+	// container.style.visibility = "hidden"; 
 
-	closeButton.style.visibility = "hidden"; 
+	// closeButton.style.visibility = "hidden"; 
 
-	buttonSection.removeChild(addButton);
+	// buttonSection.removeChild(addButton);
 
-	addButtonCounter = 1;
+	//trying something new
+
+
+document.getElementById("nameGoesHere").innerHTML = "" ; 
+
+document.getElementById("descripGoesHere").innerHTML="";
+
+document.getElementById("kwTab").innerHTML= "";
+
+document.getElementById("keywordGoesHere").innerHTML="oneCard.keywords";
+
+image.innerHTML = ""
+
+container.style.visibility = "hidden"; 
+
+closeButton.style.visibility = "hidden"; 
+	 
+buttonSection.removeChild(addButton);
+addButtonCounter = 1;
 
 }
 
